@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewHaven — Artisan Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>BrewHaven</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="btn-order">Order Now</button>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO SECTION  -->
+    <section class="hero" id="home">
+        <div class="hero-bg-blur"></div>
+        <div class="hero-content">
+            <p class="hero-tagline">Est. 2010 · Artisan Roasters · Kolkata</p>
+            <h1 class="hero-title">Wake Up to<br><span>Perfect Coffee</span></h1>
+            <p class="hero-desc">Sourced from the world's finest highlands, roasted with passion, brewed to perfection — every cup tells a story.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Explore Menu</a>
+                <a href="#about" class="btn-outline">Our Story</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Origins</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Customers</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Rating</span></div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="coffee-card">
+                <div class="coffee-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80" alt="Coffee Cup">
+                </div>
+                <div class="coffee-badge">
+                    <i class="fas fa-leaf"></i> Organic
+                </div>
+                <div class="floating-card fc1">
+                    <i class="fas fa-fire"></i>
+                    <span>Fresh Brewed Daily</span>
+                </div>
+                <div class="floating-card fc2">
+                    <i class="fas fa-star"></i>
+                    <span>Top Rated 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ABOUT SECTION  -->
+    <section class="about" id="about">
+        <div class="section-label">Our Story</div>
+        <div class="about-grid">
+            <div class="about-images">
+                <div class="about-img-main">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500&q=80" alt="Coffee Roasting">
+                </div>
+                <div class="about-img-sm">
+                    <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=300&q=80" alt="Barista">
+                </div>
+                <div class="about-years">
+                    <span class="years-num">14</span>
+                    <span class="years-text">years<br> of serving joy</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Passion Poured Into<br>Every Cup</h2>
+                <p>We started BrewHaven with one simple belief — great coffee isn’t just a habit, it’s a feeling. Located in the heart of Kolkata at Park Street, our café is waiting for you.</p>
+                <p>Our coffee beans are sourced directly from plantations in Kerala, Coorg, and Indonesia, and are roasted in small batches by our master roasters — each cup is a blend of science and emotion.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-seedling"></i>
+                        <div>
+                            <h4>Ethically sourced</h4>
+                            <p>Directly from 20+ farms across Coorg, Wayanad, and Kerala</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-fire-flame-curved"></i>
+                        <div>
+                            <h4>Small-batch roasted</h4>
+                            <p>Freshly roasted within 48 hours of order</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Award-winning blend</h4>
+                            <p>Recognized at the India Barista Championship</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#menu" class="btn-primary">Discover Our Blends</a>
+            </div>
+        </div>
+    </section>
+
+    <!--  MENU SECTION  -->
+    <section class="menu" id="menu">
+        <div class="section-label">Our Offerings</div>
+        <h2 class="section-title centered">Crafted With Care</h2>
+        <p class="section-sub">From bold espresso to silky lattes — find your perfect cup</p>
+
+        <div class="menu-tabs">
+            <button class="tab active" data-tab="hot">Hot Drinks</button>
+            <button class="tab" data-tab="cold">Cold Brews</button>
+            <button class="tab" data-tab="food">Food</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <!-- JS will render cards here -->
+        </div>
+    </section>
+
+    <!--  TESTIMONIALS SECTION  -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-label">What They Say</div>
+        <h2 class="section-title centered">Loved by Coffee Lovers</h2>
+        <div class="testimonials-wrapper">
+            <div class="testimonials-track" id="testimonialsTrack">
+                <!-- JS renders cards -->
+            </div>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+    </section>
+
+    <!--  GALLERY SECTION  -->
+    <section class="gallery" id="gallery">
+        <div class="section-label">Visual Stories</div>
+        <h2 class="section-title centered">Our Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item gi-large">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Coffee">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80" alt="Espresso">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Latte Art">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&q=80" alt="Cafe">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gi-tall">
+                <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=400&q=80" alt="Beans">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!--  CONTACT SECTION  -->
+    <section class="contact" id="contact">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title centered">Visit or Connect</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Our Address</h4>
+                        <p>12 Park Street, Middleton Row<br>Kolkata, West Bengal 700016</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Opening time</h4>
+                        <p>Monday – Friday: Morning 7:00 am – Night time 9:00 pm<br>Saturday – Sunday: Morning 8:00 am – Night time 10:00 pm</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>phone number</h4>
+                        <p>+91 98300 12345<br>+91 33 2229 6789</p>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="What's on your mind?">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Your message here..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="nav-logo">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>BrewHaven</span>
+                </div>
+                <p>Every cup of coffee in the heart of Kolkata is crafted with precision — ethically sourced, small-batch roasted, and always fresh.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#">Espresso</a></li>
+                    <li><a href="#">Cold Brew</a></li>
+                    <li><a href="#">Pastries</a></li>
+                    <li><a href="#">Seasonal</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Get updates on seasonal blends and special offers.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BrewHaven. All rights reserved |Crafted with care <i class="fas fa-heart"></i> With love for coffee, from Kolkata.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
