@@ -28,9 +28,9 @@ A modern, responsive coffee shop website focused on clean UI, smooth interaction
 
 ## 🛠 Tech Stack
 
-- HTML5  
-- CSS3 (Custom styling + animations)  
-- JavaScript (Vanilla JS)
+- HTML 
+- CSS
+- JavaScript
 
 ---
 
